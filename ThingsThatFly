@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class ThingsThatFly {
+    public static void main(String[] args) {
+        ArrayList<Flight> arrList = new ArrayList<Flight>();
+        arrList.add(new Airplane("F18",2025));
+        arrList.add(new Bird("BlackHawk"));
+        arrList.add(new Bird("Eagle"));
+        for(Flight thingsThatFly2: arrList){
+            System.out.println(thingsThatFly2.toString());
+            thingsThatFly2.fly();
+        }
+    }
+}
